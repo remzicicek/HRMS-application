@@ -1,16 +1,12 @@
-package com.hrms.HRMS.models;
+package com.hrms.HRMS.models.concretes;
 
 import com.hrms.HRMS.core.enums.Gender;
-import com.hrms.HRMS.entities.concretes.CandidateEntity;
+import com.hrms.HRMS.models.abstracts.UserModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Data
 @NoArgsConstructor

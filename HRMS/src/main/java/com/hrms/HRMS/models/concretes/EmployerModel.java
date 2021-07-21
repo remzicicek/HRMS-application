@@ -1,12 +1,9 @@
-package com.hrms.HRMS.models;
+package com.hrms.HRMS.models.concretes;
 
+import com.hrms.HRMS.models.abstracts.UserModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
 
 @Data
 @NoArgsConstructor

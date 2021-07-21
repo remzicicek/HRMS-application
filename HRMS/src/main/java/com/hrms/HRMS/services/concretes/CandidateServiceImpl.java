@@ -1,8 +1,8 @@
 package com.hrms.HRMS.services.concretes;
 
-import com.hrms.HRMS.core.Validators.MailValidationService;
-import com.hrms.HRMS.core.Validators.MernisValidationService;
-import com.hrms.HRMS.core.converter.CandidateMapper;
+import com.hrms.HRMS.core.Validators.abstracts.MailValidationService;
+import com.hrms.HRMS.core.Validators.abstracts.MernisValidationService;
+import com.hrms.HRMS.core.converters.abstracts.CandidateConverter;
 import com.hrms.HRMS.core.exception.CandidateException;
 import com.hrms.HRMS.core.results.Constant.ErrorDataResult;
 import com.hrms.HRMS.core.results.Constant.ErrorResult;
@@ -10,8 +10,7 @@ import com.hrms.HRMS.core.results.Constant.SuccessDataResult;
 import com.hrms.HRMS.core.results.Constant.SuccessResult;
 import com.hrms.HRMS.core.results.DataResult;
 import com.hrms.HRMS.core.results.Result;
-import com.hrms.HRMS.entities.concretes.CandidateEntity;
-import com.hrms.HRMS.models.CandidateModel;
+import com.hrms.HRMS.models.concretes.CandidateModel;
 import com.hrms.HRMS.repositories.CandidateRepository;
 import com.hrms.HRMS.services.abstracts.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +20,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.List;
 
 @Service
@@ -30,10 +28,10 @@ public class CandidateServiceImpl implements CandidateService {
     private CandidateRepository candidateRepository;
     private MernisValidationService mernisValidationService;
     private MailValidationService mailValidationService;
-    private CandidateMapper candidateMapper;
+    private CandidateConverter candidateMapper;
 
     @Autowired
-    public CandidateServiceImpl(CandidateRepository candidateRepository, CandidateMapper candidateMapper,
+    public CandidateServiceImpl(CandidateRepository candidateRepository, CandidateConverter candidateMapper,
                                 MernisValidationService mernisValidationService, MailValidationService mailValidationService) {
         this.candidateRepository = candidateRepository;
         this.mernisValidationService = mernisValidationService;

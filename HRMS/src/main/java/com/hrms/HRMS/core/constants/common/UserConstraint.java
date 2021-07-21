@@ -1,4 +1,4 @@
-package com.hrms.HRMS.core.constraint.common;
+package com.hrms.HRMS.core.constants.common;
 
 public class UserConstraint {
 

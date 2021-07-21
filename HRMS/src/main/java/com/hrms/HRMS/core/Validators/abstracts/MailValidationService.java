@@ -1,4 +1,4 @@
-package com.hrms.HRMS.core.Validators;
+package com.hrms.HRMS.core.Validators.abstracts;
 
 public interface MailValidationService {
 

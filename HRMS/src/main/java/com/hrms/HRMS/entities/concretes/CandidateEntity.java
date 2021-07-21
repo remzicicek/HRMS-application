@@ -1,7 +1,6 @@
 package com.hrms.HRMS.entities.concretes;
 
-import com.hrms.HRMS.core.constraint.CandidateConstraint;
-import com.hrms.HRMS.core.constraint.common.UserConstraint;
+import com.hrms.HRMS.core.constants.CandidateConstant;
 import com.hrms.HRMS.core.enums.Gender;
 import com.hrms.HRMS.entities.abstracts.UserEntity;
 import lombok.AllArgsConstructor;
@@ -12,7 +11,6 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Entity
 @Data
@@ -30,23 +28,23 @@ import java.util.Date;
             )
 public class CandidateEntity extends UserEntity {
 
-    @Column(name = CandidateConstraint.COLUMN_FIRST_NAME, length = 50, nullable = false)
+    @Column(name = CandidateConstant.COLUMN_FIRST_NAME, length = 50, nullable = false)
     @NotBlank
     private String firstName;
 
-    @Column(name = CandidateConstraint.COLUMN_LAST_NAME, length = 50, nullable = false)
+    @Column(name = CandidateConstant.COLUMN_LAST_NAME, length = 50, nullable = false)
     @NotBlank
     private String lastName;
 
-    @Column(name = CandidateConstraint.COLUMN_IDENTITITY_NUMBER, length = 13, nullable = false, unique = true)
+    @Column(name = CandidateConstant.COLUMN_IDENTITITY_NUMBER, length = 13, nullable = false, unique = true)
     @NotBlank
     private String identityNumber;
 
-    @Column(name = CandidateConstraint.COLUMN_BIRTH_DATE, nullable = false)
+    @Column(name = CandidateConstant.COLUMN_BIRTH_DATE, nullable = false)
     @NotNull
     private LocalDate birthDate;
 
-    @Column(name = CandidateConstraint.COLUMN_GENDER, length = 6)
+    @Column(name = CandidateConstant.COLUMN_GENDER, length = 6)
     @Enumerated(EnumType.STRING)
     private Gender gender;
 

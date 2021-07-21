@@ -1,6 +1,6 @@
-package com.hrms.HRMS.core.constraint;
+package com.hrms.HRMS.core.constants;
 
-public class JobConstraint {
+public class JobConstant {
 
     public final static String COLUMN_JOB_TITLE= "job_title";
     public final static String COLUMN_DESCRIPTION = "decription";

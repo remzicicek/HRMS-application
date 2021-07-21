@@ -2,8 +2,7 @@ package com.hrms.HRMS.restControllers.abstracts;
 
 import com.hrms.HRMS.core.results.DataResult;
 import com.hrms.HRMS.core.results.Result;
-import com.hrms.HRMS.entities.concretes.CandidateEntity;
-import com.hrms.HRMS.models.CandidateModel;
+import com.hrms.HRMS.models.concretes.CandidateModel;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;

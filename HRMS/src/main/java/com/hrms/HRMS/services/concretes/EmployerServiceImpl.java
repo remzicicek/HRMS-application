@@ -1,7 +1,6 @@
 package com.hrms.HRMS.services.concretes;
 
-import com.hrms.HRMS.core.Validators.MailValidationService;
-import com.hrms.HRMS.core.exception.CandidateException;
+import com.hrms.HRMS.core.Validators.abstracts.MailValidationService;
 import com.hrms.HRMS.core.exception.EmployerException;
 import com.hrms.HRMS.core.results.Constant.ErrorDataResult;
 import com.hrms.HRMS.core.results.Constant.ErrorResult;

@@ -1,4 +1,4 @@
-package com.hrms.HRMS.models;
+package com.hrms.HRMS.models.abstracts;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

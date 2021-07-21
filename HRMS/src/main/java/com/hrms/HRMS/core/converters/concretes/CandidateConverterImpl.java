@@ -1,14 +1,15 @@
-package com.hrms.HRMS.core.converter;
+package com.hrms.HRMS.core.converters.concretes;
 
+import com.hrms.HRMS.core.converters.abstracts.CandidateConverter;
 import com.hrms.HRMS.entities.concretes.CandidateEntity;
-import com.hrms.HRMS.models.CandidateModel;
+import com.hrms.HRMS.models.concretes.CandidateModel;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class CandidateMapperImpl implements CandidateMapper{
+public class CandidateConverterImpl implements CandidateConverter {
 
     @Override
     public CandidateEntity convertToEntity(CandidateModel candidateModel){

@@ -1,10 +1,9 @@
-package com.hrms.HRMS.models;
+package com.hrms.HRMS.models.abstracts;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass // to see upper class parameter in the entity table that is on the database

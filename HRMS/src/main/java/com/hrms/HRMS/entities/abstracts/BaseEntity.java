@@ -1,7 +1,6 @@
 package com.hrms.HRMS.entities.abstracts;
 
-import com.hrms.HRMS.core.constraint.common.BaseConstraint;
-import com.hrms.HRMS.core.constraint.common.UserConstraint;
+import com.hrms.HRMS.core.constants.common.BaseConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

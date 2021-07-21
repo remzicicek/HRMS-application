@@ -1,6 +1,6 @@
-package com.hrms.HRMS.core.constraint;
+package com.hrms.HRMS.core.constants;
 
-public class CandidateConstraint {
+public class CandidateConstant {
 
     public final static String COLUMN_FIRST_NAME = "first_name";
     public final static String COLUMN_LAST_NAME = "last_name";

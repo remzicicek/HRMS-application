@@ -1,14 +1,12 @@
 package com.hrms.HRMS.entities.abstracts;
 
-import com.hrms.HRMS.core.constraint.common.UserConstraint;
+import com.hrms.HRMS.core.constants.common.UserConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
-import javax.persistence.Table;
-import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
