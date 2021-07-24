@@ -35,13 +35,13 @@ public class CityServiceImpl implements CityService {
 
     @Override
     public DataResult<List<CityEntity>> getAll() {
-        return new SuccessDataResult<>(cityRepository.findAll(), "Cities is successfully received");
+        return new SuccessDataResult<>(cityRepository.findAll(), "Cities are successfully received");
     }
 
     @Override
     public DataResult<List<CityEntity>> getAllSorted() {
-        Sort sort = Sort.by(Sort.Direction.DESC, "jobTitle");
-        return new SuccessDataResult<>(cityRepository.findAll(sort), "Cities is successfully sorted");
+        Sort sort = Sort.by(Sort.Direction.DESC, "cityName");
+        return new SuccessDataResult<>(cityRepository.findAll(sort), "Cities are successfully sorted");
     }
 
     @Override

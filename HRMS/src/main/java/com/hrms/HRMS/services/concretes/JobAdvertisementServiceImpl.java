@@ -42,13 +42,13 @@ public class JobAdvertisementServiceImpl implements JobAdvertisementService {
 
     @Override
     public DataResult<List<JobAdvertisementEntity>> getAll() {
-        return new SuccessDataResult<>(jobAdvertisementRepository.findAll(), "JobAdvertisements is successfully received");
+        return new SuccessDataResult<>(jobAdvertisementRepository.findAll(), "JobAdvertisements are successfully received");
     }
 
     @Override
     public DataResult<List<JobAdvertisementEntity>> getAllSorted() {
         Sort sort = Sort.by(Sort.Direction.DESC, "advertisement_name");
-        return new SuccessDataResult<>(jobAdvertisementRepository.findAll(sort), "Job Advertisements is successfully sorted");
+        return new SuccessDataResult<>(jobAdvertisementRepository.findAll(sort), "Job Advertisements are successfully sorted");
     }
 
     @Override

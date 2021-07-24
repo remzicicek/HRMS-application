@@ -36,13 +36,13 @@ public class JobServiceImpl implements JobService {
 
     @Override
     public DataResult<List<JobEntity>> getAll() {
-        return new SuccessDataResult<>(jobRepository.findAll(), "Jobs is successfully received");
+        return new SuccessDataResult<>(jobRepository.findAll(), "Jobs are successfully received");
     }
 
     @Override
     public DataResult<List<JobEntity>> getAllSorted() {
         Sort sort = Sort.by(Sort.Direction.DESC, "jobTitle");
-        return new SuccessDataResult<>(jobRepository.findAll(sort), "Jobs is successfully sorted");
+        return new SuccessDataResult<>(jobRepository.findAll(sort), "Jobs are successfully sorted");
     }
 
     @Override

@@ -39,13 +39,13 @@ public class EmployerServiceImpl implements EmployerService {
 
     @Override
     public DataResult<List<EmployerEntity>> getAll() {
-        return new SuccessDataResult<>(this.employerRepository.findAll(), "Employers is successfully received");
+        return new SuccessDataResult<>(this.employerRepository.findAll(), "Employers are successfully received");
     }
 
     @Override
     public DataResult<List<EmployerEntity>> getAllSorted() {
         Sort sort = Sort.by(Sort.Direction.DESC, "companyName");
-        return new SuccessDataResult<>(employerRepository.findAll(sort), "Employer is successfully sorted");
+        return new SuccessDataResult<>(employerRepository.findAll(sort), "Employers are successfully sorted");
     }
 
     @Override

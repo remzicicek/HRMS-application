@@ -1,5 +1,6 @@
 package com.hrms.HRMS.entities.concretes;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.hrms.HRMS.core.constants.CandidateConstant;
 import com.hrms.HRMS.core.enums.Gender;
 import com.hrms.HRMS.entities.abstracts.UserEntity;
@@ -26,6 +27,7 @@ import java.time.LocalDate;
 //                    }
 //            )
             )
+@JsonIgnoreProperties({"hibernateLazyInitializer","handler","cv"})
 public class CandidateEntity extends UserEntity {
 
     @Column(name = CandidateConstant.COLUMN_FIRST_NAME, length = 50, nullable = false)
@@ -47,5 +49,13 @@ public class CandidateEntity extends UserEntity {
     @Column(name = CandidateConstant.COLUMN_GENDER, length = 6)
     @Enumerated(EnumType.STRING)
     private Gender gender;
+
+//    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+//    @JoinColumn(name = CandidateConstant.COLUMN_EDUCATION, referencedColumnName = "id", nullable = false, updatable = false)
+//    @NotNull
+//    private EducationEntity education;
+
+    @OneToOne(mappedBy = "candidate")
+    private CvEntity cv;
 
 }

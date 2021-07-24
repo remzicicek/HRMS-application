@@ -7,5 +7,6 @@ public class CandidateConstant {
     public final static String COLUMN_IDENTITITY_NUMBER = "identity_number";
     public final static String COLUMN_BIRTH_DATE = "birth_date";
     public final static String COLUMN_GENDER = "gender";
+    public final static String COLUMN_EDUCATION = "education_id";
 
 }

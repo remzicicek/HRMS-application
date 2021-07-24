@@ -48,13 +48,13 @@ public class CandidateServiceImpl implements CandidateService {
 
     @Override
     public DataResult<List<CandidateModel>> getAll() {
-        return new SuccessDataResult<>(candidateMapper.converToModelList(candidateRepository.findAll()), "Candidates is successfully received");
+        return new SuccessDataResult<>(candidateMapper.converToModelList(candidateRepository.findAll()), "Candidates are successfully received");
     }
 
     @Override
     public DataResult<List<CandidateModel>> getAllSorted() {
         Sort sort = Sort.by(Sort.Direction.DESC, "firstName");
-        return new SuccessDataResult<>(candidateMapper.converToModelList(candidateRepository.findAll(sort)), "Data is successfully sorted");
+        return new SuccessDataResult<>(candidateMapper.converToModelList(candidateRepository.findAll(sort)), "Candidates are successfully sorted");
     }
 
     @Override
